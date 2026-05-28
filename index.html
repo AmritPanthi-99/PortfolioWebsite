@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111315">
+    <title>Amrit Panthi | SOC Analyst</title>
+    <meta
+      name="description"
+      content="Portfolio of Amrit Panthi, a Toronto-based SOC Analyst focused on SIEM monitoring, threat detection, and incident investigation."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Header / Navigation: edit menu links and resume download button here. -->
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Amrit Panthi home">
+          <span class="brand-mark">A</span>
+          <span>Amrit Panthi</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#work">Projects</a>
+          <a href="#about">Experience</a>
+          <a href="#services">Skills</a>
+          <a href="#contact">Contact</a>
+          <a class="button button-small" href="assets/Amrit-Panthi-Resume.docx" download>Download Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero: edit your name, headline, intro, and top resume button here. -->
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="availability-dot"></span>
+            Open to SOC Analyst opportunities
+          </div>
+          <p class="eyebrow">SOC Analyst / Blue Team / Threat Detection</p>
+          <h1>
+            Detecting threats.
+            <span class="accent serif">Defending</span>
+            systems.
+          </h1>
+          <p class="hero-intro">
+            I am Amrit Panthi, a Toronto-based SOC Analyst with hands-on
+            experience in SIEM monitoring, alert triage, log correlation,
+            and incident investigation.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="assets/Amrit-Panthi-Resume.docx" download>Download Resume</a>
+            <a class="text-link" href="#work">View security projects <span>&#8599;</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-hidden="true">
+          <div class="portrait-card">
+            <div class="portrait-shape">
+              <span class="portrait-initial">A</span>
+            </div>
+            <div class="floating-card top-card">
+              <span>Monitoring with</span>
+              <strong>Splunk + Sysmon</strong>
+            </div>
+            <div class="floating-card bottom-card">
+              <strong>BTL1</strong>
+              <span>Certified</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Highlights: edit the four short stats below the hero here. -->
+      <section class="numbers">
+        <div class="container number-grid reveal">
+          <div>
+            <strong>5+</strong>
+            <span>SIEM rules tested</span>
+          </div>
+          <div>
+            <strong>SIEM</strong>
+            <span>Alert triage</span>
+          </div>
+          <div>
+            <strong>MITRE</strong>
+            <span>ATT&CK mapping</span>
+          </div>
+          <div>
+            <strong>BTL1</strong>
+            <span>Certified analyst</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Lab Experience: edit or add lab/project cards here. -->
+      <section class="section work container" id="work">
+        <div class="section-heading reveal">
+          <div>
+            <h2>Home Lab Experience</h2>
+          </div>
+          <p>
+            Simulated security operations investigations using endpoint,
+            SIEM, and network telemetry.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">01</span>
+              <p class="project-type">Splunk SIEM</p>
+            </div>
+            <h3>SIEM Monitoring & Alert Triage</h3>
+            <p class="lab-summary">
+              Monitored simulated SIEM alerts and investigated suspicious
+              authentication events in a SOC-style workflow.
+            </p>
+            <ul class="lab-list">
+              <li>Identified brute-force login attempts and unauthorized access patterns.</li>
+              <li>Reviewed alert context to determine severity and next steps.</li>
+              <li>Practiced SOC-style investigation and escalation workflows.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>Splunk</span>
+              <span>Alert Triage</span>
+              <span>Authentication Logs</span>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">02</span>
+              <p class="project-type">Sysmon / Wireshark</p>
+            </div>
+            <h3>Endpoint & Network Investigation</h3>
+            <p class="lab-summary">
+              Investigated endpoint behavior and traffic artifacts to spot
+              anomalies that could indicate compromise.
+            </p>
+            <ul class="lab-list">
+              <li>Reviewed unusual process execution and suspicious parent-child activity.</li>
+              <li>Analyzed packet captures for network traffic indicators.</li>
+              <li>Identified anomalies across host and network evidence.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>Sysmon</span>
+              <span>Wireshark</span>
+              <span>IOCs</span>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">03</span>
+              <p class="project-type">Splunk SPL / MITRE ATT&CK</p>
+            </div>
+            <h3>Detection Rules & Threat Mapping</h3>
+            <p class="lab-summary">
+              Built and tested detection logic for common attack behaviors
+              and mapped activity to MITRE ATT&CK.
+            </p>
+            <ul class="lab-list">
+              <li>Developed 5+ SIEM detection rules in Splunk lab environments.</li>
+              <li>Reduced noise by tuning detections and reviewing false positives.</li>
+              <li>Focused detections on repeatable attack behaviors.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>Splunk SPL</span>
+              <span>Detection Rules</span>
+              <span>False Positives</span>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">04</span>
+              <p class="project-type">Windows / Sysmon / Network Logs</p>
+            </div>
+            <h3>Log Correlation & Attack Timelines</h3>
+            <p class="lab-summary">
+              Correlated multiple telemetry sources to reconstruct simulated
+              attack activity and identify key evidence.
+            </p>
+            <ul class="lab-list">
+              <li>Combined Windows Event Logs, Sysmon telemetry, and network traffic.</li>
+              <li>Reconstructed attack timelines from separate log sources.</li>
+              <li>Identified indicators of compromise for investigation notes.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>Windows Event Logs</span>
+              <span>Correlation</span>
+              <span>IOCs</span>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">05</span>
+              <p class="project-type">MITRE ATT&CK</p>
+            </div>
+            <h3>Threat Technique Mapping</h3>
+            <p class="lab-summary">
+              Mapped observed attack behavior to MITRE ATT&CK to support
+              structured threat analysis and reporting.
+            </p>
+            <ul class="lab-list">
+              <li>Connected suspicious activity to relevant ATT&CK techniques.</li>
+              <li>Used technique mapping to organize investigation findings.</li>
+              <li>Supported clearer reporting for detection and response decisions.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>MITRE ATT&CK</span>
+              <span>Threat Analysis</span>
+              <span>Reporting</span>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <div class="lab-card-top">
+              <span class="lab-number">06</span>
+              <p class="project-type">Incident Documentation</p>
+            </div>
+            <h3>Incident Reporting & Response Notes</h3>
+            <p class="lab-summary">
+              Documented simulated incident findings and response actions in
+              a format aligned with SOC workflows.
+            </p>
+            <ul class="lab-list">
+              <li>Recorded investigation findings, evidence, and response actions.</li>
+              <li>Practiced escalation-ready incident reporting.</li>
+              <li>Summarized alerts clearly for follow-up and handoff.</li>
+            </ul>
+            <div class="lab-tags">
+              <span>Incident Response</span>
+              <span>Escalation</span>
+              <span>Documentation</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Work Experience: edit current and previous jobs here. -->
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <div>
+              <h2>Work Experience</h2>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <p class="large-text">
+              I bring a strong foundation in security operations workflows,
+              escalation procedures, and threat detection, with experience
+              communicating technical findings clearly and accurately.
+            </p>
+            <div class="experience">
+              <div>
+                <span>2025 - Present</span>
+                <strong>Cashier / Customer Service, Alpremium Food Mart</strong>
+              </div>
+              <div>
+                <span>2022</span>
+                <strong>Pre-sales Associate, Genese Solution</strong>
+              </div>
+              <div>
+                <span>2020 - 2021</span>
+                <strong>Cybersecurity Associate, Softwarica College of IT and E-commerce</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills: edit skill categories and descriptions here. -->
+      <section class="section services container" id="services">
+        <div class="section-heading reveal">
+          <div>
+            <h2>Technical Skills</h2>
+          </div>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal">
+            <span>01</span>
+            <h3>Security Operations</h3>
+            <p>SIEM monitoring, alert triage, incident investigation, escalation, and log correlation.</p>
+          </article>
+          <article class="service reveal">
+            <span>02</span>
+            <h3>Tools & Telemetry</h3>
+            <p>Splunk, Wireshark, Sysmon, TCPDump, ELK Stack, Windows Event Logs, and Linux logs.</p>
+          </article>
+          <article class="service reveal">
+            <span>03</span>
+            <h3>Network & Systems</h3>
+            <p>TCP/IP, DNS, HTTP/S, VPN, Active Directory basics, Windows, and Linux environments.</p>
+          </article>
+          <article class="service reveal">
+            <span>04</span>
+            <h3>Analysis & Querying</h3>
+            <p>Splunk SPL, MITRE ATT&CK mapping, IOC analysis, and Python fundamentals for log parsing.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications: edit certification cards here. -->
+      <section class="section credentials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <h2>Certifications</h2>
+            </div>
+          </div>
+          <div class="credential-grid training-grid">
+            <article class="credential reveal">
+              <h3>Blue Team Level 1 (BTL1)</h3>
+              <p>Practical blue-team and incident-response certification.</p>
+            </article>
+            <article class="credential reveal">
+              <h3>TryHackMe SOC Level 1</h3>
+              <p>Security operations center investigation practice.</p>
+            </article>
+            <article class="credential reveal">
+              <h3>Google Cybersecurity</h3>
+              <p>Hands-on Linux, MySQL, and Python labs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education: edit school, program, and dates here. -->
+      <section class="section education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <h2>Education</h2>
+            </div>
+          </div>
+          <div class="credential-grid education-grid">
+            <article class="credential reveal">
+              <p class="project-type">January 2023 - August 2024</p>
+              <h3>Post-Graduate in Project Management - IT</h3>
+              <p>Cestar College of Business, Health, and Technology (Lambton College),</br>Toronto, Canada</p>
+            </article>
+            <article class="credential reveal">
+              <p class="project-type">July 2018 - February 2022</p>
+              <h3>Bachelor of Science with Honors in Computing</h3>
+              <p>Softwarica College of IT and E-commerce (Coventry University), 
+              </br>Kathmandu, Nepal</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact: edit email, form text, phone number, location, and LinkedIn here. -->
+      <section class="contact" id="contact">
+        <div class="container contact-inner reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>
+            Looking for a dedicated SOC analyst?
+            <span class="serif accent">Let's connect.</span>
+          </h2>
+          <a class="email" href="mailto:amritpanthi99@gmail.com">amritpanthi99@gmail.com</a>
+          <form class="contact-form" id="contact-form">
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="your@email.com" required>
+              </label>
+              <label class="form-field full-width">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+              </label>
+            </div>
+            <button class="button contact-button" type="submit">Send message</button>
+            <p class="form-note">Your email app will open with this message addressed to me.</p>
+          </form>
+          <a class="phone-highlight" href="tel:+16472002785">
+            <span>Reach me by phone</span>
+            <strong>+1 647-200-2785</strong>
+          </a>
+          <div class="contact-links">
+            <span>Toronto, ON</span>
+            <a href="https://www.linkedin.com/in/amrit-panthi/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="assets/Amrit-Panthi-Resume.docx" download>Download Resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer: edit copyright text here. -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Amrit Panthi. All rights reserved.</p>
+        <a href="#top">Back to top &#8593;</a>
+      </div>
+    </footer>
+  </body>
+</html>
