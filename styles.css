@@ -266,98 +266,132 @@ h3 {
   justify-content: flex-end;
 }
 
-.portrait-card {
+.certificate-card {
   position: relative;
-  width: min(100%, 450px);
-  padding: 0 1.75rem 2rem;
-}
-
-.portrait-shape {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: clamp(480px, 53vw, 565px);
-  overflow: hidden;
-  border-radius: 14rem 14rem 0.7rem 0.7rem;
-  background:
-    radial-gradient(circle at 52% 31%, rgba(240, 219, 190, 0.8) 0 11%, transparent 11.5%),
-    radial-gradient(circle at 52% 31%, #302822 0 15.5%, transparent 16%),
-    linear-gradient(136deg, transparent 48%, rgba(89, 67, 53, 0.13) 49%, transparent 72%),
-    #ddcfbb;
-}
-
-.portrait-shape::before {
-  content: "";
-  position: absolute;
-  bottom: -1.5rem;
-  left: 18%;
-  width: 68%;
-  height: 49%;
-  border-radius: 45% 45% 0 0;
-  background: #292820;
-}
-
-.portrait-shape::after {
-  content: "";
-  position: absolute;
-  top: 43%;
-  right: 0;
-  width: 56%;
-  height: 57%;
-  opacity: 0.42;
-  background: linear-gradient(to bottom left, transparent 42%, #ede2d0 43%, transparent 58%);
-}
-
-.portrait-initial {
-  position: absolute;
-  right: 2rem;
-  bottom: 0.5rem;
-  z-index: 1;
-  color: rgba(255, 253, 248, 0.12);
-  font-family: var(--serif);
-  font-size: 11rem;
-  line-height: 1;
-}
-
-.floating-card {
-  position: absolute;
-  z-index: 2;
-  display: flex;
+  align-items: stretch;
   flex-direction: column;
-  gap: 0.28rem;
-  padding: 1rem 1.2rem;
-  background: rgba(255, 253, 248, 0.93);
-  border-radius: 0.72rem;
+  width: min(100%, 440px);
+  margin: 0;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 1.6rem;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(57, 114, 102, 0.16), transparent 28%),
+    rgba(255, 253, 248, 0.82);
   box-shadow: var(--shadow);
 }
 
-.floating-card span {
-  color: var(--muted);
+.certificate-preview {
+  overflow: hidden;
+  padding: 0.45rem;
+  border: 1px solid rgba(57, 114, 102, 0.18);
+  border-radius: 1.15rem;
+  background: var(--white);
+}
+
+.certificate-preview img {
+  display: block;
+  width: 100%;
+  border-radius: 0.85rem;
+}
+
+.certificate-zoom-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0.85rem;
+  background: transparent;
+  cursor: zoom-in;
+  font: inherit;
+}
+
+.certificate-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(12, 14, 12, 0.86);
+}
+
+.certificate-modal.open {
+  display: flex;
+}
+
+.certificate-modal img {
+  max-width: min(100%, 1100px);
+  max-height: 88vh;
+  border-radius: 0.8rem;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.38);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid rgba(255, 253, 248, 0.2);
+  border-radius: 50%;
+  color: var(--white);
+  background: rgba(255, 253, 248, 0.1);
+  cursor: pointer;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  background: var(--accent);
+}
+
+.certificate-card figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 1.1rem 0.15rem 0;
+}
+
+.certificate-card figcaption span {
+  color: var(--accent);
   font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
-.floating-card strong {
-  font-size: 0.92rem;
+.certificate-card figcaption strong {
+  color: var(--ink);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
 }
 
-.top-card {
-  top: 28%;
-  right: -0.2rem;
+.certificate-card figcaption a {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
 }
 
-.bottom-card {
-  bottom: 0;
-  left: 0;
-  min-width: 7.8rem;
+.certificate-card figcaption a:hover {
+  color: var(--accent);
 }
 
-.bottom-card strong {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 400;
+.certificate-link {
+  display: inline-flex;
+  margin-top: 1.1rem;
+  color: var(--accent-deep);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.certificate-link:hover {
   color: var(--accent);
 }
 
@@ -1095,10 +1129,6 @@ h3 {
     justify-content: center;
   }
 
-  .portrait-card {
-    width: min(100%, 450px);
-  }
-
   .number-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.2rem 0;
@@ -1207,16 +1237,8 @@ h3 {
     gap: 1.4rem;
   }
 
-  .portrait-card {
-    padding-inline: 0.6rem;
-  }
-
-  .portrait-shape {
-    height: 430px;
-  }
-
-  .top-card {
-    right: 0;
+  .certificate-card {
+    padding: 0.75rem;
   }
 
   .number-grid div {

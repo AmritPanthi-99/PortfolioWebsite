@@ -69,21 +69,21 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal reveal-delay" aria-hidden="true">
-          <div class="portrait-card">
-            <div class="portrait-shape">
-              <span class="portrait-initial">A</span>
-            </div>
-            <div class="floating-card top-card">
-              <span>Monitoring with</span>
-              <strong>Splunk + Sysmon</strong>
-            </div>
-            <div class="floating-card bottom-card">
-              <strong>BTL1</strong>
-              <span>Certified</span>
-            </div>
+        <figure class="hero-visual certificate-card reveal reveal-delay">
+          <div class="certificate-preview">
+            <button class="certificate-zoom-trigger" type="button" aria-label="Enlarge BTL1 certificate">
+              <img
+                src="assets/btl1-certificate.jpg"
+                alt="Blue Team Level 1 certificate awarded to Amrit Panthi"
+              >
+            </button>
           </div>
-        </div>
+          <figcaption>
+            <span>Verified Certification</span>
+            <strong>Blue Team Level 1</strong>
+            <a href="assets/btl1-certificate.jpg" target="_blank" rel="noreferrer">View full certificate</a>
+          </figcaption>
+        </figure>
       </section>
 
       <!-- Quick Highlights: edit the four short stats below the hero here. -->
@@ -330,6 +330,9 @@
             <article class="credential reveal">
               <h3>Blue Team Level 1 (BTL1)</h3>
               <p>Practical blue-team and incident-response certification.</p>
+              <a class="certificate-link" href="assets/btl1-certificate.jpg" target="_blank" rel="noreferrer">
+                View full certificate
+              </a>
             </article>
             <article class="credential reveal">
               <h3>TryHackMe SOC Level 1</h3>
@@ -414,5 +417,11 @@
         <a href="#top">Back to top &#8593;</a>
       </div>
     </footer>
+
+    <!-- Certificate popup: opens when visitors click the certificate image. -->
+    <div class="certificate-modal" id="certificate-modal" aria-hidden="true" role="dialog" aria-label="Enlarged BTL1 certificate">
+      <button class="modal-close" type="button" aria-label="Close certificate preview">&times;</button>
+      <img src="assets/btl1-certificate.jpg" alt="Blue Team Level 1 certificate awarded to Amrit Panthi">
+    </div>
   </body>
 </html>
