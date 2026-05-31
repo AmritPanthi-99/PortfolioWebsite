@@ -90,8 +90,8 @@
       <section class="numbers">
         <div class="container number-grid reveal">
           <div>
-            <strong>5+</strong>
-            <span>SIEM rules tested</span>
+            <strong>SPL</strong>
+            <span>Custom alert rules</span>
           </div>
           <div>
             <strong>SIEM</strong>
@@ -146,21 +146,21 @@
           <article class="lab-card reveal">
             <div class="lab-card-top">
               <span class="lab-number">02</span>
-              <p class="project-type">Sysmon / Wireshark</p>
+              <p class="project-type">Sysmon / Event Viewer</p>
             </div>
-            <h3>Endpoint & Network Investigation</h3>
+            <h3>Windows Endpoint Investigation</h3>
             <p class="lab-summary">
-              Investigated endpoint behavior and traffic artifacts to spot
-              anomalies that could indicate compromise.
+              Investigated Windows endpoint activity using Event Viewer and
+              Sysmon logs to identify suspicious behavior.
             </p>
             <ul class="lab-list">
-              <li>Reviewed unusual process execution and suspicious parent-child activity.</li>
-              <li>Analyzed packet captures for network traffic indicators.</li>
-              <li>Identified anomalies across host and network evidence.</li>
+              <li>Traced user activity and reviewed security events.</li>
+              <li>Investigated suspicious PowerShell execution and malware-related activity.</li>
+              <li>Reconstructed attack timelines from endpoint telemetry.</li>
             </ul>
             <div class="lab-tags">
               <span>Sysmon</span>
-              <span>Wireshark</span>
+              <span>Event Viewer</span>
               <span>IOCs</span>
             </div>
           </article>
@@ -176,9 +176,9 @@
               and mapped activity to MITRE ATT&CK.
             </p>
             <ul class="lab-list">
-              <li>Developed 5+ SIEM detection rules in Splunk lab environments.</li>
-              <li>Reduced noise by tuning detections and reviewing false positives.</li>
-              <li>Focused detections on repeatable attack behaviors.</li>
+              <li>Created custom searches and alert rules in Splunk lab environments.</li>
+              <li>Detected failed logins, privilege escalation attempts, and anomalous activity.</li>
+              <li>Mapped investigation findings to MITRE ATT&CK techniques.</li>
             </ul>
             <div class="lab-tags">
               <span>Splunk SPL</span>
@@ -190,66 +190,66 @@
           <article class="lab-card reveal">
             <div class="lab-card-top">
               <span class="lab-number">04</span>
-              <p class="project-type">Windows / Sysmon / Network Logs</p>
+              <p class="project-type">Wireshark</p>
             </div>
-            <h3>Log Correlation & Attack Timelines</h3>
+            <h3>Network Traffic Analysis</h3>
             <p class="lab-summary">
-              Correlated multiple telemetry sources to reconstruct simulated
-              attack activity and identify key evidence.
+              Analyzed network traffic to identify suspicious communications,
+              insecure protocols, and potential credential exposure.
             </p>
             <ul class="lab-list">
-              <li>Combined Windows Event Logs, Sysmon telemetry, and network traffic.</li>
-              <li>Reconstructed attack timelines from separate log sources.</li>
-              <li>Identified indicators of compromise for investigation notes.</li>
+              <li>Reviewed DNS activity and suspicious communications.</li>
+              <li>Identified insecure protocols and possible credential exposure.</li>
+              <li>Analyzed packet captures for network indicators.</li>
             </ul>
             <div class="lab-tags">
-              <span>Windows Event Logs</span>
-              <span>Correlation</span>
-              <span>IOCs</span>
+              <span>Wireshark</span>
+              <span>DNS</span>
+              <span>Packet Analysis</span>
             </div>
           </article>
 
           <article class="lab-card reveal">
             <div class="lab-card-top">
               <span class="lab-number">05</span>
-              <p class="project-type">MITRE ATT&CK</p>
+              <p class="project-type">Nmap</p>
             </div>
-            <h3>Threat Technique Mapping</h3>
+            <h3>Network Reconnaissance</h3>
             <p class="lab-summary">
-              Mapped observed attack behavior to MITRE ATT&CK to support
-              structured threat analysis and reporting.
+              Performed network reconnaissance and vulnerability assessments
+              to identify exposed services and potential weaknesses.
             </p>
             <ul class="lab-list">
-              <li>Connected suspicious activity to relevant ATT&CK techniques.</li>
-              <li>Used technique mapping to organize investigation findings.</li>
-              <li>Supported clearer reporting for detection and response decisions.</li>
+              <li>Scanned environments to identify open ports.</li>
+              <li>Reviewed exposed services for potential security weaknesses.</li>
+              <li>Documented findings for follow-up investigation.</li>
             </ul>
             <div class="lab-tags">
-              <span>MITRE ATT&CK</span>
-              <span>Threat Analysis</span>
-              <span>Reporting</span>
+              <span>Nmap</span>
+              <span>Open Ports</span>
+              <span>Vulnerability Assessment</span>
             </div>
           </article>
 
           <article class="lab-card reveal">
             <div class="lab-card-top">
               <span class="lab-number">06</span>
-              <p class="project-type">Incident Documentation</p>
+              <p class="project-type">Email Security</p>
             </div>
-            <h3>Incident Reporting & Response Notes</h3>
+            <h3>Phishing Investigation</h3>
             <p class="lab-summary">
-              Documented simulated incident findings and response actions in
-              a format aligned with SOC workflows.
+              Investigated suspicious emails to determine malicious intent
+              and support incident response decisions.
             </p>
             <ul class="lab-list">
-              <li>Recorded investigation findings, evidence, and response actions.</li>
-              <li>Practiced escalation-ready incident reporting.</li>
-              <li>Summarized alerts clearly for follow-up and handoff.</li>
+              <li>Examined email headers, sender information, and embedded links.</li>
+              <li>Reviewed attachments and indicators for suspicious activity.</li>
+              <li>Documented findings and escalation actions.</li>
             </ul>
             <div class="lab-tags">
-              <span>Incident Response</span>
+              <span>Phishing</span>
+              <span>Email Headers</span>
               <span>Escalation</span>
-              <span>Documentation</span>
             </div>
           </article>
         </div>
@@ -271,16 +271,16 @@
             </p>
             <div class="experience">
               <div>
-                <span>2025 - Present</span>
-                <strong>Cashier / Customer Service, Alpremium Food Mart</strong>
-              </div>
-              <div>
-                <span>2022</span>
+                <span>May 2022 - Oct 2022</span>
                 <strong>Pre-sales Associate, Genese Solution</strong>
               </div>
               <div>
-                <span>2020 - 2021</span>
-                <strong>Cybersecurity Associate, Softwarica College of IT and E-commerce</strong>
+                <span>June 2021 - May 2022</span>
+                <strong>Information Security Associate, F1Soft International Pvt. Ltd</strong>
+              </div>
+              <div>
+                <span>Jan 2020 - May 2021</span>
+                <strong>Security Operations Assistant, Softwarica College of IT and E-commerce</strong>
               </div>
             </div>
           </div>
@@ -303,7 +303,7 @@
           <article class="service reveal">
             <span>02</span>
             <h3>Tools & Telemetry</h3>
-            <p>Splunk, Wireshark, Sysmon, TCPDump, ELK Stack, Windows Event Logs, and Linux logs.</p>
+            <p>Splunk, Wireshark, Sysmon, TCPDump, ELK Stack, Nmap, Windows Event Logs, and Linux logs.</p>
           </article>
           <article class="service reveal">
             <span>03</span>
@@ -313,7 +313,7 @@
           <article class="service reveal">
             <span>04</span>
             <h3>Analysis & Querying</h3>
-            <p>Splunk SPL, MITRE ATT&CK mapping, IOC analysis, and Python fundamentals for log parsing.</p>
+            <p>Splunk SPL, MITRE ATT&CK mapping, IOC analysis, and basic Python for log parsing and automation.</p>
           </article>
         </div>
       </section>
@@ -338,6 +338,10 @@
             <article class="credential reveal">
               <h3>Google Cybersecurity</h3>
               <p>Hands-on Linux, MySQL, and Python labs.</p>
+            </article>
+            <article class="credential reveal">
+              <h3>AWS Cloud Practitioner Essentials</h3>
+              <p>Foundational AWS cloud training.</p>
             </article>
           </div>
         </div>
@@ -401,6 +405,7 @@
           <div class="contact-links">
             <span>Toronto, ON</span>
             <a href="https://www.linkedin.com/in/amrit-panthi/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/AmritPanthi-99" target="_blank" rel="noreferrer">GitHub</a>
             <a href="assets/SOC_Resume.pdf" download>Download Resume</a>
           </div>
         </div>
