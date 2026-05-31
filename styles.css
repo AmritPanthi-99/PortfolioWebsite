@@ -27,7 +27,6 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
   color: var(--ink);
   background: var(--background);
   font-family: var(--sans);
@@ -264,15 +263,20 @@ h3 {
 .hero-visual {
   display: flex;
   justify-content: flex-end;
+  min-width: 0;
 }
 
 .portrait-card {
   position: relative;
   width: min(100%, 680px);
+  max-width: 100%;
+  min-width: 0;
   padding-bottom: 2rem;
 }
 
 .certificate-frame {
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   border: 0.55rem solid var(--white);
   border-radius: 0.9rem;
