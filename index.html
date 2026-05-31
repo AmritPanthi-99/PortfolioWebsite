@@ -69,14 +69,20 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal reveal-delay" aria-hidden="true">
+        <div class="hero-visual reveal reveal-delay">
           <div class="portrait-card">
-            <div class="portrait-shape">
-              <span class="portrait-initial">A</span>
-            </div>
-            <div class="floating-card top-card">
-              <span>Monitoring with</span>
-              <strong>Splunk + Sysmon</strong>
+            <div class="certificate-frame">
+              <button
+                class="certificate-trigger"
+                type="button"
+                aria-label="Expand Blue Team Level 1 certificate"
+              >
+                <img
+                  class="certificate-image"
+                  src="assets/btl1-certificate.jpg"
+                  alt="Blue Team Level 1 certificate awarded to Amrit Panthi"
+                >
+              </button>
             </div>
             <div class="floating-card bottom-card">
               <strong>BTL1</strong>
@@ -411,6 +417,11 @@
         </div>
       </section>
     </main>
+
+    <dialog class="certificate-modal" id="certificate-modal" aria-label="Blue Team Level 1 certificate">
+      <button class="certificate-close" type="button" aria-label="Close certificate preview">&times;</button>
+      <img src="assets/btl1-certificate.jpg" alt="Expanded Blue Team Level 1 certificate awarded to Amrit Panthi">
+    </dialog>
 
     <!-- Footer: edit copyright text here. -->
     <footer class="site-footer">

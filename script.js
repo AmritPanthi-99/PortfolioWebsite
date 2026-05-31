@@ -6,6 +6,9 @@ const menu = document.querySelector(".nav-links");
 const year = document.querySelector("#year");
 const reveals = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("#contact-form");
+const certificateTrigger = document.querySelector(".certificate-trigger");
+const certificateModal = document.querySelector("#certificate-modal");
+const certificateClose = document.querySelector(".certificate-close");
 
 year.textContent = new Date().getFullYear();
 
@@ -21,6 +24,20 @@ menu.querySelectorAll("a").forEach((link) => {
     menuButton.setAttribute("aria-expanded", "false");
     menu.classList.remove("open");
   });
+});
+
+// Certificate preview: expands the BTL1 certificate without leaving the page.
+certificateTrigger.addEventListener("click", () => certificateModal.showModal());
+certificateClose.addEventListener("click", () => certificateModal.close());
+certificateModal.addEventListener("click", (event) => {
+  if (event.target === certificateModal) {
+    certificateModal.close();
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && certificateModal.open) {
+    certificateModal.close();
+  }
 });
 
 // Contact form: opens the visitor's email app with a pre-filled message to you.

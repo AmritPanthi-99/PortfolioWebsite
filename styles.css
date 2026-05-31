@@ -147,8 +147,8 @@ h3 {
 /* Hero Section */
 .hero {
   display: grid;
-  grid-template-columns: minmax(370px, 1.1fr) minmax(320px, 0.82fr);
-  gap: clamp(2rem, 7vw, 6.5rem);
+  grid-template-columns: minmax(350px, 0.95fr) minmax(400px, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
   align-items: center;
   min-height: calc(100vh - 5.7rem);
   padding: 4.3rem 0 5.8rem;
@@ -268,56 +268,79 @@ h3 {
 
 .portrait-card {
   position: relative;
-  width: min(100%, 450px);
-  padding: 0 1.75rem 2rem;
+  width: min(100%, 680px);
+  padding-bottom: 2rem;
 }
 
-.portrait-shape {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: clamp(480px, 53vw, 565px);
+.certificate-frame {
   overflow: hidden;
-  border-radius: 14rem 14rem 0.7rem 0.7rem;
-  background:
-    radial-gradient(circle at 52% 31%, rgba(240, 219, 190, 0.8) 0 11%, transparent 11.5%),
-    radial-gradient(circle at 52% 31%, #302822 0 15.5%, transparent 16%),
-    linear-gradient(136deg, transparent 48%, rgba(89, 67, 53, 0.13) 49%, transparent 72%),
-    #ddcfbb;
+  border: 0.55rem solid var(--white);
+  border-radius: 0.9rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
 }
 
-.portrait-shape::before {
-  content: "";
-  position: absolute;
-  bottom: -1.5rem;
-  left: 18%;
-  width: 68%;
-  height: 49%;
-  border-radius: 45% 45% 0 0;
-  background: #292820;
+.certificate-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
 }
 
-.portrait-shape::after {
-  content: "";
-  position: absolute;
-  top: 43%;
-  right: 0;
-  width: 56%;
-  height: 57%;
-  opacity: 0.42;
-  background: linear-gradient(to bottom left, transparent 42%, #ede2d0 43%, transparent 58%);
+.certificate-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 220ms ease;
 }
 
-.portrait-initial {
+.certificate-trigger:hover .certificate-image,
+.certificate-trigger:focus-visible .certificate-image {
+  transform: scale(1.025);
+}
+
+.certificate-trigger:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+.certificate-modal {
+  width: min(94vw, 1100px);
+  max-height: 94vh;
+  padding: 2.8rem 1rem 1rem;
+  border: 0;
+  border-radius: 0.85rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.certificate-modal::backdrop {
+  background: rgba(17, 19, 21, 0.82);
+}
+
+.certificate-modal img {
+  display: block;
+  width: 100%;
+  max-height: calc(94vh - 3.8rem);
+  object-fit: contain;
+}
+
+.certificate-close {
   position: absolute;
-  right: 2rem;
-  bottom: 0.5rem;
-  z-index: 1;
-  color: rgba(255, 253, 248, 0.12);
-  font-family: var(--serif);
-  font-size: 11rem;
+  top: 0.35rem;
+  right: 0.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  color: var(--ink);
+  font-size: 2rem;
   line-height: 1;
+  background: transparent;
+  cursor: pointer;
 }
 
 .floating-card {
@@ -341,11 +364,6 @@ h3 {
 
 .floating-card strong {
   font-size: 0.92rem;
-}
-
-.top-card {
-  top: 28%;
-  right: -0.2rem;
 }
 
 .bottom-card {
@@ -1096,7 +1114,7 @@ h3 {
   }
 
   .portrait-card {
-    width: min(100%, 450px);
+    width: min(100%, 680px);
   }
 
   .number-grid {
@@ -1208,15 +1226,7 @@ h3 {
   }
 
   .portrait-card {
-    padding-inline: 0.6rem;
-  }
-
-  .portrait-shape {
-    height: 430px;
-  }
-
-  .top-card {
-    right: 0;
+    padding-bottom: 1.6rem;
   }
 
   .number-grid div {
