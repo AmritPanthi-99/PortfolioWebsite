@@ -27,7 +27,10 @@ menu.querySelectorAll("a").forEach((link) => {
 });
 
 // Certificate preview: expands the BTL1 certificate without leaving the page.
-certificateTrigger.addEventListener("click", () => certificateModal.showModal());
+certificateTrigger.addEventListener("click", (event) => {
+  event.preventDefault();
+  certificateModal.showModal();
+});
 certificateClose.addEventListener("click", () => certificateModal.close());
 certificateModal.addEventListener("click", (event) => {
   if (event.target === certificateModal) {
