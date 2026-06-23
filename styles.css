@@ -1021,38 +1021,6 @@ h3 {
   background: var(--accent);
 }
 
-.phone-highlight {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin: 0 auto 2.7rem;
-  padding: 0.95rem 1.35rem;
-  border: 1px solid rgba(255, 253, 248, 0.16);
-  border-radius: 999px;
-  background: rgba(255, 253, 248, 0.07);
-  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
-}
-
-.phone-highlight span {
-  color: #aeadab;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.phone-highlight strong {
-  color: var(--white);
-  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
-  letter-spacing: -0.04em;
-}
-
-.phone-highlight:hover {
-  border-color: var(--accent);
-  background: rgba(57, 114, 102, 0.18);
-  transform: translateY(-2px);
-}
-
 .contact-links {
   display: flex;
   justify-content: center;
@@ -1305,12 +1273,6 @@ h3 {
     text-align: center;
   }
 
-  .phone-highlight {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    border-radius: 1rem;
-  }
 }
 
 /* Accessibility: reduce motion for users who request it. */
